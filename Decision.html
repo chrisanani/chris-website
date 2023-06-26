@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Form</title>
+</head>
+<body>
+    <style>
+        * { 
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+        body { min-height: 60vh; 
+            
+        background-color: bisque;}
+        height: auto;
+        width: auto;
+
+        div {
+  height: auto;
+  width: auto;
+  border: 1px solid #ceec48;
+  background-color: bisque;
+}
+        
+        h1, h2 {
+        color: blue;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        letter-spacing:4px;
+        }
+        .submit-button {
+            background-color: rgb(75, 75, 228);
+            height: 30px;
+            width: 80px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            }
+        
+        .submit-button:hover {
+            background-color: rgb(216, 219, 18) (255, 180, 140);
+            color: blueviolet;
+            opacity: 3px;
+
+        }
+        legend { 
+            background-color: blue;
+            font-style: italic;
+            color: white;
+            font-weight: bold;
+        }
+        input {
+            margin-right: 20px;            
+        }
+        tr, td {
+            border-spacing: 10px;
+        }
+
+        #ag {
+            margin-right: 30px;
+        }
+        
+       #ml {
+        margin-right: 5px;
+       }
+       #fe {
+        margin-right: 10px;
+        margin-left: 10px;
+       }
+        select {
+            margin-right: 20px;
+        }
+        :placeholder-shown {
+            font-size: small;
+        }
+
+    </style>
+    
+    <div style="background-color: rgb(200, 216, 53);">
+    <h1>CALVARY BAPTIST CHURCH</h1>
+    <H2>DECISION FORM</H2>
+    <Form>
+        <Fieldset action="">
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td>Date</td>
+                    <td><input type="date" placeholder="DD-MM-YYYY"></td>
+                    <td>Campus</td>
+                    <td><select required="select campus">
+                        <option value="0"></option>
+                        <option value="1">Adabraka</option>
+                        <option value="2">Shiashie</option>
+                        <option value="3">Bortianor</option>
+                        <option value="4">Amasaman</option>
+                        <option value="5">Oyibi</option>
+                        <option value="6">Community 25</option>
+                    </select>
+                    <td>Chapel/Service</td>
+                    <td><select required>
+                        <option value="0"></option>
+                        <option value="1">Ga/Ewe</option>
+                        <option value="2">Teen</option>
+                        <option value="3">English</option>
+                        <option value="4">Youth</option>
+                        <option value="5">French</option>
+                        <option value="6">Akan/Ewe</option>
+                        <option value="7">Akan</option>
+                        <option value="8">Children</option>
+
+                    </select>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Name" placeholder="Enter counselee's name" required></td>
+                    <td>Mobile Number(s)</td>
+                    <td><input type="tel" min-length="10" maxlength="10" size="10" required=" you't entered the mobile number"></td>
+                    <td><input type="tel" min-length="10" maxlength="10" size="10"></td>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" id="ml">Male 
+                    <input type="radio" name="gender" id="fe">Female</td>
+                    <td></td>
+                    <td><input type="text" id="ag" size="4" maxlength="4">Age </td>
+
+                </tr>
+                <tr>
+                    <td>Area of Residence</td>
+                    <td><input type="text" name="Residence" placeholder="Enter residence"></td>
+                    <td>Digital Address</td>
+                    <td><input type="text" name:"ga" format:"00-0000-0000 maxlength="12" size="12"   placeholder="Enter Digital address"></td>
+                    <td>Day & Time available at Home</td>
+                    <td><input type="time"></td>
+                    <td><select required>
+                        <option value="70"></option>
+                        <option value="71">Monday</option>
+                        <option value="72">Tuesday</option>
+                        <option value="73">Wednesday</option>
+                        <option value="74">Thursday</option>
+                        <option value="75">Friday</option>
+                        <option value="76">Saturday</option>
+                        <option value="77">Sunday</option>
+                        <option value="78"></option>
+
+                    </select>
+
+                </tr>
+                <tr><td>Marital status</td>  
+                <td><input type="radio" name="mstatus">Married</td>
+                <td><input type="radio" name="mstatus">Single</td></tr>
+            </table>
+            <tr>
+                <td>Description of Residence</td>
+                 <td><textarea name="Residence" id="re" cols="180" rows="3" placeholder="Enter the description of residence here"></textarea> </td>
+            </tr>
+        </Fieldset>
+        <fieldset required>
+        <legend>Decision</legend>
+        <table required>
+            <th>
+                <td></td>
+                <td></td>
+            </th>
+            <tr>
+                <td><input type="radio" name="decision">Accept Jesus Christ as Lord and Personal Saviour</td></tr>
+                <tr><td><input type="radio" name="decision">Desire to Join Church</td></tr>
+                <tr><td><input type="radio" name="decision">Rededicated life</td></tr>
+                <tr><td><input type="radio" name="decision">Ask for Prayer</td></tr>            
+                <tr><td><input type="radio" name="decision">Need Counselling</td></tr>
+                <tr><td><input type="radio" name="decision">Transfer</td></tr>
+                <tr><td><input type="radio" name="decision">Others <input type="text"></td> </tr>
+
+            </tr>
+        </table>
+        </fieldset>
+        <fieldset>
+<legend>Critical Examination Question</legend>
+<table required>
+    <tr> <strong><em><font color="red">If I should die tonight. I am certain that, I shall go to heaven.</font></em></strong> </tr>
+    <tr><td><input type="radio" name="ce">Yes</td></tr>
+    <tr><td><input type="radio" name="ce">No</td></tr>
+    <tr><td><input type="radio" name="ce">Not Sure</td></tr>
+    </table>
+        </fieldset>
+        <fieldset>
+            <legend>Others</legend>
+            <table>
+                
+                    <tr><td>Contact Person at CBC</td>
+                    <td><input type="text" placeholder="Enter contact person"></td>
+                    <td>Mobile number</td>
+                    <td><input type="tel" min-length="10" maxlength="10" size="10"></td>
+                </tr>
+                    
+            </table>
+            <tr><td>Prayer requested</td>
+                <textarea name="Prayer" id="pr" cols="180" rows="3" placeholder="Enter Prayer request"></textarea> </tr>
+        </fieldset>
+        <fieldset>
+            <legend>Counsellor</legend>
+                        <table>
+                </select>
+                <td>Name</td>
+                <td><select required>
+                    <optgroup label="Adabraka">Adabraka</optgroup>
+                    <option value=""></option>
+                    <option value="9">Susan Bartels</option>
+                    <option value="10">Nana Hagan</option>
+                    <option value="11">Gifty Jecty</option>
+                    <option value="12">Patience Tetteh</option>
+                    <option value="13">Michael Njoku</option>
+                    <option value="14">Noel Johnson</option>
+                    <option value="15">Felicia Obeng</option>
+                    <option value="16">Esther Deegbe</option>
+                    <option value="17">Agnes Coffie</option>
+                    <option value="18">Richard Kumakpata</option>
+                    <option value="19">Frank Bonnah</option>
+                    <option value="20">Jerry Eli Ocloo</option>
+                    <option value="21">Emmanuel Aye</option>
+                    <option value="22">Annie Mortey</option>
+                    <option value="23">Rose Issifu</option>
+                    <option value="24">Francesca Ayerro</option>
+                    <option value="25">Kwodjo Dankwa</option>
+                    <option value="26">Bismark Ohemeng</option>
+                    <option value="27">Pious Kudemor</option>
+                    <option value="28">Elizabeth Crentsil</option>
+                    <option value="29">Ebenezer Aryeetey</option>
+                    <option value="30">Erica Boakong</option>
+                    <option value="31">Nelly Annan</option>
+                    <option value="32">Lawrence Awuah</option>
+                    <option value="33">Doris Agbemabiese</option>
+                    <option value="34">Narteh Siaw Sapporo</option>
+                    <option value="35">Gloria Quaynor</option>
+                    <option value="36">Harry Awuku Akuffo</option>
+
+                    <optgroup label="Shiashie">Shiashie</optgroup>
+                    <option value="37">Aklasu Christian</option>
+                    <option value="38">Daniel Amaning</option>
+                    <option value="39">Jessie Banerman-wood</option>
+                    <option value="40">Ekow Sam</option>
+                    <option value="41">Cephas Logo</option>
+                    <option value="42">Matilda Hoyah</option>
+                    <option value="43">Grace Damalie</option>
+                    <option value="44">Rose-Vida Kamboe</option>
+                    <option value="45">Jemima Wallace</option>
+                    <option value="46">Mercedes Mari</option>
+                    <option value="47">Moses Yeh</option>
+                    <option value="48">Karen Awanyo</option>
+                    <option value="49">Isaac Agbo</option>
+                    <option value="50">Mary Tome</option>
+                    <optgroup label="Bortianor"></optgroup>
+                    <option value="51">Charles Annan</option>
+                    <option value="52">Nii Ankrah</option>
+                    <optgroup label="Amasaman"></optgroup>
+                    <option value="53">Comfort Mensah</option>
+                    <option value="54">Agyeman Dua</option>
+                    <option value="55">Augustine Tibo</option>
+                    <option value="56">John Mawuli Nyadigbe</option>
+                    <optgroup label="Oyibi">Oyibi</optgroup>
+                    <option value="57">Korbla Kukubor</option>
+                    <optgroup label="Community 25"></optgroup>
+                    <option value="58">Augustine Klomegah</option>
+
+                </select>
+                
+                    <td>Mobile number</td>
+                    <td><input type="tel" min-length="10" maxlength="10" size="10"></td> 
+                
+                    
+            </table>
+            <tr><td>Zone</td>
+                <td><input type="text"></td>
+                <td>Fellowship</td>
+                <td><input type="text"></td>
+                <td>Sheepfold</td>
+                <td><input type="text"></td></tr>
+        </fieldset>
+        <center><button class="submit-button">Submit</button></center>
+        </div>
+        
+    </Form>
+    <i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+    
+
+    
+</body>
+</html>
